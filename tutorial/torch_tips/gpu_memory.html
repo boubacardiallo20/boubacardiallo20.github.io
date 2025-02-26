@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="icon" href="picture/hku.png"> -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <meta name="keywords" content="Boubacar Diallo, Deep Learning, Computer Vision, Machine, Learning, Artificial Intelligence"> 
+	<meta name="description" content="Personal page of Boubacar Diallo">
+</head>
+
+<title>Boubacar DIALLO</title>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+		<div class="container">
+		<a class="navbar-brand" href="../../index.html">Boubacar DIALLO</a>
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../lab.html">Lab</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../publication.html">Publication</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../award.html">Award</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../service.html">Service</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../talk.html">Tutorial</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../more.html">More</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<!-- Tutorial -->
+	<div class="container" style="padding-top: 20px; font-size: 17px;">
+		<h2 style="padding-top: 80px; margin-top: -80px;">
+            Visualize GPU Memory Usage for Better Optimization
+        </h2>
+		<hr>
+        <div class="col-md-10" style="padding-top: 80px; margin-top: -80px; font-size: 32px;">
+            <b><font color="black"><a href="gpu_memory.html">Visualize GPU Memory Usage for Better Optimization</a></font></b><br>
+        </div>
+
+        <div class="col-md-10">
+            <u>Track GPU memory usage to spot inefficiencies and optimize resource-heavy model deployments.</u><br><br>
+        </div>
+        
+        <div class="col-md-10">
+            <div class="badge">CVPR</div><img class="img-fluid img-rounded" src="../../teaser/bouba/memory.png" alt="Precision Agriculture" style="width: 80%;">
+        </div><br>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h4>Why This Works</h4>
+            <p>
+                Tracking memory usage helps identify inefficiencies, spikes, and fragmentation in GPU memory. 
+                By recording and visualizing these patterns, you can optimize model performance, debug memory leaks, 
+                and improve memory management, especially for large-scale or resource-limited applications.
+            </p>
+        </div>
+
+        <!-- Section: Benefits -->
+        <div class="col-md-10 mt-3">
+            <h4>Benefits</h4>
+            <ul>
+                <li>Detects memory spikes and fragmentation.</li>
+                <li>Optimizes model scaling and deployment.</li>
+                <li>Enables debugging of memory leaks in complex pipelines.</li>
+            </ul>
+        </div>
+
+        <!-- Section: Applications -->
+        <div class="col-md-10 mt-3">
+            <h4>Applications</h4>
+            <p>Use this when developing memory-intensive models, deploying on limited-resource hardware, or scaling across multiple GPUs.</p>
+        </div>
+
+        <!-- Section: Usage -->
+        <div class="col-md-10 mt-3">
+            <h4>Usage</h4>
+            <p>Use the code below to generate a <code>profile.pkl</code> file, 
+                storing detailed memory usage data. Visualize it using PyTorch's memory visualizer.</p>
+
+            <div style="position: relative; background-color: #f8f9fa; padding: 15px; border-radius: 5px;">
+                <button id="copyButton" style="position: absolute; top: 10px; right: 10px; background-color: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">
+                    Copy
+                </button>
+                <pre id="codeBlock" style="margin: 0;">
+import torch
+from torch import nn
+
+# Start recording memory snapshot history
+torch.cuda.memory._record_memory_history(max_entries=100000)
+
+# Example model and computation
+model = nn.Linear(10_000, 50_000, device="cuda")
+for _ in range(3):
+    inputs = torch.randn(5_000, 10_000, device="cuda")
+    outputs = model(inputs)
+
+# Dump memory history to a file and stop recording
+torch.cuda.memory._dump_snapshot("profile.pkl")
+torch.cuda.memory._record_memory_history(enabled=None)
+                </pre>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('copyButton').addEventListener('click', function() {
+                const codeBlock = document.getElementById('codeBlock').innerText;
+                navigator.clipboard.writeText(codeBlock).then(function() {
+                    // alert('Code copied to clipboard!');
+                });
+            });
+        </script>
+
+        <!-- Section: Visualization -->
+        <div class="col-md-10 mt-3">
+            <h4>Visualization</h4>
+            <p>Visualization tools : <a href="https://pytorch.org/memory_viz">https://pytorch.org/memory_viz</a></p>
+        </div>
+
+    </div>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', { speed: 1000 });
+    </script>
+</body>
+</html>
