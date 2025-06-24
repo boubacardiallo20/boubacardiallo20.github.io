@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="icon" href="picture/hku.png"> -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <meta name="keywords" content="Boubacar Diallo, Deep Learning, Computer Vision, Machine, Learning, Artificial Intelligence"> 
+	<meta name="description" content="Personal page of Boubacar Diallo">
+</head>
+
+<title>Boubacar DIALLO</title>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+		<div class="container">
+		<a class="navbar-brand" href="index.html">Boubacar DIALLO</a>
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../../index.html">Home</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="lab.html">Lab</a>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="../../publication.html">Publication</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../talk.html">Tutorial</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="../../experiences_exr.html">Role@ExR</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../more.html">Curriculum Vitae</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<!-- Tutorial -->
+	<div class="container" style="padding-top: 20px; font-size: 17px;">
+		<h2 style="padding-top: 80px; margin-top: -80px;">
+            Biggest challenges in precision agriculture
+        </h2>
+		<hr>
+        <div class="col-md-10" style="padding-top: 80px; margin-top: -80px; font-size: 32px;">
+            <b><font color="black"><a href="gpu_memory.html">Biggest challenges in precision agriculture</a></font></b><br>
+        </div>
+        <br>
+
+        Publication date : <b>April, 01 2024</b><br><br>
+        <div style="text-align:justify; padding: 2px; border: 1px solid #e9cbcb; border-radius: 10px; background-color: #f9f9f9;">
+            <p>
+                <div style="text-align:justify">
+                    <b>Boubacar DIALLO Ph.D.</b><br>
+                    <ul>
+                        <li>R&D Engineer in DATA SCIENTIST | IA - VISION | ROBOTICS | SPECIALIZED LLMs</li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+        <br>
+
+        <div class="col-md-10">
+            AI can be used in different areas of agriculture: we can identify in particular :<br>
+            <ul>
+                <li>Seed Analysis,</li>
+                <li>Water Management,</li>
+                <li>Soil Analysis,</li>
+                <li>Weed and Pest Detection,</li>
+                <li>Stress Plant Detection,</li>
+                <li>Plant Disease Detection,</li>
+                <li>Crop Yield Detection</li>
+            </ul>
+            <img class="img-fluid img-rounded" src="./images/adopt_00.png" alt="Precision Agriculture" style="width: 70%;">
+            <br><br>
+
+            Although AI techniques as machine Learning and Deep Learning methods have shown promising 
+            results in the agricultural sector, there are still some open challenges that need to be addressed.<br>
+            These challenges are discussed below:
+        </div>
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Limited data availability</h2>
+            <p>
+                One of the biggest challenges in using Deep Learning in agriculture is the limited availability 
+                of labelled training data. Collecting and labelling large datasets for agriculture is a 
+                time-consuming and expensive task that limits the ability of AI models to perform accurately.
+                </p>
+            <p>
+                Labeling often requires significant time and specialized expertise. As a result, a large portion of collected 
+                images remains unlabeled, constituting an untapped reservoir of raw data. Neglecting this resource means missing 
+                out on crucial opportunities to significantly improve the performance of AI models in agriculture.
+                To this end, research has proposed several ideas for using unlabeled images:<br>
+                
+                <ul>
+                    <li><b>Semi-supervised learning (SSL)</b> combines a small amount of labeled data with a large amount of unlabeled data. 
+                    The labeled data guides the training of the AI ​​model, while the unlabeled data helps generalize better by 
+                    identifying patterns and structures in the data.</li><br>
+                    
+                    <li><b>Self-supervised learning (SSL)</b> is a technique in which an AI model learns patterns and representations from 
+                    unlabeled data by predicting missing parts of the data (e.g., pixels or context) using automatically generated labels. 
+                    This pre-training is then used to train another AI model on specific tasks to improve performance with minimal labeled data.</li><br>
+                    
+                    <li><b>Research also includes the use of Generative Adversarial Networks (GANs)</b>, neural networks with a special architecture to 
+                    generate realistic, labeled synthetic images. This ensures increased diversity while maintaining strict consistency with 
+                    established labeling standards for datasets.</li>
+            </p>
+        </div>
+
+        <hr>
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Domain Adaptation: New Fields and Crops</h2>
+            <p>
+                Agricultural environments are extremely variable, and AI models trained on data from one region or crop do not always 
+                perform effectively in others. Domain adaptation is therefore a major challenge for AI in precision agriculture, 
+                requiring models capable of rapidly adapting to different contexts and crops.<br>
+                Research has proposed two main approaches to address this challenge:
+            </p>
+        </div>
+
+        <!-- Section: Benefits -->
+        <div class="col-md-10 mt-3">
+            <ul>
+                <li><b>Generalized-specific transfer learning approach:</b> This method improves model performance by leveraging pre-training 
+                    on various environments or crops from a diverse agricultural dataset to adapt them to a specific environment or crop.</li>
+                    <br>
+                <li><b>Targeted transfer learning approach between similar crops:</b> This method uses AI models pre-trained on data from crops 
+                    that share similar characteristics with the target crop. For example, a model trained on sugar beet data can be fine-tuned 
+                    to perform effectively on crops such as sunflowers or soybeans. Similarities have also been observed between crops such as 
+                    soybeans, potatoes, and broccoli, making these approaches particularly relevant.</li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <h8><i>Angarano, Simone, et al. "<b>Domain generalization for crop segmentation with standardized ensemble knowledge distillation.</b>" 
+                Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2024.</i></h8>
+            <div class="badge">CVPR</div><img class="img-fluid img-rounded" src="./images/da_00.png" alt="Precision Agriculture" style="width: 80%;">
+            <p>
+                A novel approach to enhance usage domain or environment generalization using knowledge distillation.
+                Supervised training methodologies struggle to generalize across tasks, domains, and categories.
+                Deep learning models easily fail in realistic applications without effective generalization ability, leading autonomous systems to failure.
+            </p>
+            <ul>
+                <li>For practical applications, labeled samples are rarely available in all locations.</li>
+                <li>Generalizing to new crops and environmental conditions is critical.</li>
+                <li>Transfer knowledge from an ensemble of models individually trained on source domains to a 
+                    student model that can adapt to unseen target domains.</li>
+                <li>Use dataset containing plants of certain crop and covering different terrain/soil styles, 
+                    weather conditions, and light scenarios differents.</li>
+                <li>Goal : Unique segmentation model, achieving satisfying results on all conditions.</li>
+            </ul>
+            <div class="badge">CVPR</div><img class="img-fluid img-rounded" src="./images/da_01.png" alt="Precision Agriculture" style="width: 80%;">
+        </div>
+
+        <hr>
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Interpretability and Transparency of AI Results</h2>
+            <p>
+                The lack of interpretability and transparency of AI models is a major challenge in precision agriculture. 
+                Farmers and agronomists must understand the decision-making mechanisms of these models as well as the factors influencing their results.
+            </p>
+        </div>
+        <div class="col-md-10">
+            <h7><i>Emam, Ahmed, et al. "<b>Framework for Enhanced Decision Support in Digital Agriculture Using Explainable Machine Learning.</b>"</i></h7><br><br>
+            <div class="badge">CVPR</div><img class="img-fluid img-rounded" src="./images/exp_01.png" alt="Precision Agriculture" style="width: 80%;">
+            <p>
+                Increased interpretability of AI models provides stakeholders with a better understanding of their strengths, 
+                limitations, and reliability. This promotes both more effective use and increased confidence in practical applications.
+            </p>
+            <div class="badge">CVPR</div><img class="img-fluid img-rounded" src="./images/exp_03.png" alt="Precision Agriculture" style="width: 100%;">
+        </div>
+
+        <hr>
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Robustness of AI Models</h2>
+            <p>
+                AI models are often sensitive to variations in environmental conditions, which can negatively impact their performance. 
+                It is therefore crucial to develop models capable of adapting to changes such as weather conditions, variations in soil 
+                color and type, and differences in lighting. <br>
+                To address this challenge, research proposes several solutions:
+            </p>
+            <ul>
+                <li><b>Data augmentation techniques:</b> These allow the simulation of various environments, such as crop patterns, weeds, 
+                    or lighting variations, to enhance the robustness and generalization capacity of models.</li>
+                    <br>
+                <li><b>Corner case management:</b> This concerns rare or critical scenarios where models struggle to correctly interpret a situation. 
+                    For example, a tractor changing direction, shadows cast, or animals crossing a field. Continuously identifying these 
+                    failure cases and integrating them into datasets significantly improves model performance in these complex contexts.</li>
+            </ul>
+        </div>
+
+        <hr>
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Farmer Adoption of Technology</h2>
+            <p>
+                Farmer adoption of technology represents a major challenge for AI in precision agriculture. 
+                It is crucial to develop intuitive tools and interfaces, accessible even to those without advanced technical expertise. 
+                This will facilitate their integration into daily farming practices.
+            </p>
+        </div>
+
+        <hr>
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Conclusion</h2>
+            <p>
+                This article has highlighted several key challenges related to the application of AI in precision agriculture. 
+                While the potential of AI in this sector is immense, sustained research and development efforts remain essential 
+                to overcome these obstacles and offer innovative, efficient, and sustainable solutions.
+            </p>
+        </div>
+        
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', { speed: 1000 });
+    </script>
+</body>
+</html>

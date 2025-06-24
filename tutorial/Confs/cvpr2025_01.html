@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="icon" href="picture/hku.png"> -->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <meta name="keywords" content="Boubacar Diallo, Deep Learning, Computer Vision, Machine, Learning, Artificial Intelligence"> 
+	<meta name="description" content="Personal page of Boubacar Diallo">
+</head>
+
+<title>Boubacar DIALLO</title>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="Home">
+		<div class="container">
+		<a class="navbar-brand" href="index.html">Boubacar DIALLO</a>
+		<div class="collapse navbar-collapse" id="navbarToggle">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../../index.html">Home</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="lab.html">Lab</a>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="../../publication.html">Publication</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="award.html">Award</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="service.html">Service</a>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="../../talk.html">Tutorial</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="../../experiences_exr.html">Role@ExR</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../../more.html">Curriculum Vitae</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<!-- Tutorial -->
+	<div class="container" style="padding-top: 20px; font-size: 17px;">
+        <br>
+		<hr>
+        <div class="col-md-10" style="padding-top: 80px; margin-top: -80px; font-size: 32px;">
+            <b><font color="black"><a href="#">Teaching AI to See the Farm with Just a Handful of Images — Few-Shot Grounding DINO</a></font></b><br>
+        </div>
+        <br>
+
+        Publication date : <b>June, 04 2025</b><br><br>
+        <div style="text-align:justify; padding: 2px; border: 1px solid #e9cbcb; border-radius: 10px; background-color: #f9f9f9;">
+            <p>
+                <div style="text-align:justify">
+                    <b>Boubacar DIALLO Ph.D.</b><br>
+                    <ul>
+                        <li>R&D Engineer in DATA SCIENTIST | IA - VISION | ROBOTICS | SPECIALIZED LLMs</li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+        <br>
+
+        <div class="col-md-10">
+            AI can be used in different areas of agriculture: we can identify in particular :<br>
+            <ul>
+                <li><u>Title:</u> <a href="https://arxiv.org/abs/2504.07252">Few-Shot Adaptation of Grounding DINO for Agricultural Domain</a>.</li>
+                <li><u>Paper Authors:</u><i> Singh, Rafael Bidese Puhl, Kshitiz Dhakal, Sudhir Sornapudi.</i></li>
+                <li><u>Institutions:</u> Corteva Agriscience, Indianapolis, USA</li>
+            </ul>
+
+            <img class="img-fluid img-rounded" src="images/cvpr2025_01_01.png" alt="Precision Agriculture" style="width: 100%;">
+            <br>
+        </div>
+
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Context</h2>
+            <p>
+                Why rely on expensive, labor-intensive annotations when AI can learn crop detection from just a few photos? 
+                This paper turns Grounding-DINO into a fast, prompt-free few-shot learner for agriculture.
+            </p>
+            <img class="img-fluid img-rounded" src="images/cvpr2025_01_02.png" alt="Precision Agriculture" style="width: 100%;">
+            <br>
+        </div>
+
+        <hr>
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>What It’s About</h2>
+            <p>
+                The paper introduces a lightweight, few-shot adaptation of the Grounding-DINO open-set object detection model, 
+                tailored explicitly for agricultural applications. The method eliminates the text encoder (BERT) and uses 
+                randomly initialized trainable embeddings instead of hand-crafted text prompts, enabling accurate detection 
+                from minimal annotated data.
+            </p>
+        </div>
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Why It Matters</h2>
+            <p>
+                High-performing agricultural AI often demands large, diverse annotated datasets, which are expensive and time-consuming. 
+                This method rapidly adapts a powerful foundation model to diverse agricultural tasks using only a few images, 
+                reducing costs and accelerating model deployment in farming and phenotyping scenarios.
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>How It Works</h2>
+            <ul>
+                <li>Grounding-DINO typically uses a vision-language architecture (image and text encoders).</li>
+                <li>This adaptation removes the BERT-based text encoder and replaces it with randomly initialized fine-tuned embeddings with minimal training images.</li>
+                <li>Only these new embeddings are trained, while the rest of the model remains frozen.</li>
+                <li>This simplified design avoids the complexities of manual text prompt engineering and dramatically reduces training overhead.</li>
+            </ul>
+            <img class="img-fluid img-rounded" src="images/cvpr2025_01_03.png" alt="Precision Agriculture" style="width: 100%;">
+        </div>
+
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Key Result</h2>
+            Across eight agricultural datasets, including PhenoBench, Crop-Weed, BUP20, and DIOR, the few-shot method 
+            consistently outperforms:
+            <ul>
+                <li>Zero-shot Grounding-DINO, particularly in cluttered or occluded scenarios.</li>
+                <li>YOLOv11, by up to 24% higher mAP with just four training images.</li>
+                <li>Prior state-of-the-art few-shot detectors in remote sensing benchmarks</li>
+            </ul>
+            <img class="img-fluid img-rounded" src="images/cvpr2025_01_04.png" alt="Precision Agriculture" style="width: 100%;">
+        </div>
+
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Broader Impact</h2>
+            <p>
+                This work presents a scalable and cost-effective way to deploy deep learning in agriculture, 
+                even with limited data. It demonstrates how foundation models can be tailored to real-world 
+                domains like plant counting, insect detection, fruit recognition, and remote sensing, 
+                making AI more accessible and valuable for sustainable and efficient farming practices.
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- Section: Explanation -->
+        <div class="col-md-10 mt-3">
+            <h2>Reference</h2>
+            <b>Singh, R. B. Puhl, K. Dhakal, and S. Sornapudi,</b> <br>
+            <i>“<u>Adaptation of Grounding DINO for Agricultural Domain,</u>” </i><br>
+            in Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR), 2025. <br>
+            Paper link: <a href="https://arxiv.org/abs/2504.07252v1">https://arxiv.org/abs/2504.07252v1</a>
+        </div>
+
+        <hr>
+        </div>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', { speed: 1000 });
+    </script>
+</body>
+</html>
